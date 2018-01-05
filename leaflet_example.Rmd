@@ -1,0 +1,30 @@
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+January 4, 2018- Akron, Ohio
+
+
+
+```{r maps}
+setwd("/home/mpiuser/Desktop/JH_Data_Products/")
+library(leaflet)
+
+
+lat <- 41.074
+lng <- -81.518
+lng2  <- -81.521
+
+
+
+m <- leaflet() %>%  # Add default OpenStreetMap map tiles
+
+ addTiles() %>%  
+ 
+
+   setView(lng, lat, zoom = 12)
+
+m  # Print the map
+
+```
